@@ -1,0 +1,10 @@
+Package: com.i0stweak3r.snoverlaycustomizer
+Name: Snoverlay Customizer
+Depends: mobilesubstrate, preferenceloader, com.leftyfl1p.snoverlay
+Version: 1.0.2
+Architecture: iphoneos-arm
+Description: Options to customize Snoverlay tweak by leftyfl1p. Interim tweak to use while working on adding these options to original tweak.
+Maintainer: i0s_tweak3r
+Author: i0s_tweak3r
+Section: Tweaks
+Homepage: http://twitter.com/brianvs
