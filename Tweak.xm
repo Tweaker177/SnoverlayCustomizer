@@ -50,7 +50,7 @@ self.flakeHeight= 12.f;
    }
 
 if(kSlowAnimation) {                 
- //If user selected the "slower animation", use these values. We could add sliders for this and size to give complete control.
+ //If user selected the "slower animation", use these values. We could add sliders for this and the size options to give complete user control.
 
 self.animationDurationMin = 12.f;
 self.animationDurationMax =24.f;
@@ -58,24 +58,32 @@ self.animationDurationMax =24.f;
    }
 
 if(kSnowHarder) {
-// Animation speeds for if user wants to slow down the normal animation speed. 
+// Animation speeds for if user wants to speed up the normal animation speed. 
 // If neither kSnowHarder or kSlowAnimation is picked, it doesn't modify that part of Snoverlay.
 
 self.animationDurationMin = 4.f;
 self.animationDurationMax = 8.f;
 
-   }
+   }  //end of if(kSnowHarder)
     return self; 
+    
   } //end of if(kEnabled) 
   return self;
-} //end of method initWithFrame:
+  
+} 
+//end of method initWithFrame:
 
-%end //End of view we are hooking to make the changes at initialization
-%end //End of group mainTweak
+%end 
+//End of view we are hooking 
 
+%end 
+//End of group mainTweak
 
 static void loadPrefs()
 {
+//This function fetches the values for all the defaults stored in our plist. Note it only has a stored value once a change has been made.
+//You can set default values if you like in here, or for BOOL's, if you want the default to be NO, it's ok to use kBool = [prefs boolForKey:key];
+
         static NSUserDefaults *prefs = [[NSUserDefaults alloc]
                                     initWithSuiteName:@"com.i0stweak3r.snoverlaycustomizer"];
 
@@ -93,14 +101,15 @@ static void loadPrefs()
 
         
          kSnowHarder = [prefs objectForKey:@"snowHarder"] ? [prefs boolForKey:@"snowHarder"] : NO; 
-//This way checks if the is value stored for snowHarder or it uses NO for the tweak
+
+//This way checks if there is a value stored for snowHarder(or it's nil) and uses that value, otherwise it uses NO in hooks.
         
       kFlakeCount = [prefs objectForKey:@"flakeCount"] ? [[prefs objectForKey:@"flakeCount"] floatValue] : kFlakeCount;
-//This is for the slider, if there is a stored value for the key, then it uses flakecount value saved in user defaults, else it uses same value it had before
-    }
 
-
-
+//This is for the slider, if there is a stored value for the key, then it uses the flakecount value saved in user defaults,
+//otherwise it uses same value it had before.
+   
+   }
 
 %ctor {
     CFNotificationCenterAddObserver(
