@@ -1,4 +1,6 @@
-
+//This is a really old header cell, banner code I used that was designed for smaller devices. Will probably ditch this for more
+//modern code, that fits perfectly for all device sizes. This looks great on iphone 5 and smaller tho lol.
+//Thank you Pixel Fire devs for making this tool. It helped when I was real new.
 //PSSpecifier.h
 @class NSMutableDictionary, NSDictionary, NSString, NSArray;
 
