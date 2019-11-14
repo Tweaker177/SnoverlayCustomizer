@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>background</key>
+			<string>#000000</string>
+			<key>cell</key>
+			<string>PSStaticTextCell</string>
+			<key>cellClass</key>
+			<string>PFHeaderCell</string>
+			<key>height</key>
+			<integer>100</integer>
+			<key>image</key>
+			<string>/Library/PreferenceBundles/SnoverlayCustomizer.bundle/header@2x.png</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enables this tweak.  Must be on for the rest of the custom settings to work. Turn on Snoverlay from it&apos;s settings to see changes.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.i0stweak3r.snoverlaycustomizer/ReloadPrefs</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.i0stweak3r.snoverlaycustomizer</string>
+			<key>key</key>
+			<string>Enabled</string>
+			<key>label</key>
+			<string>Enable tweak</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Adjust the number of snowflakes to display with the slider, then turn on Snoverlay. If already on, turn off and then back on.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.i0stweak3r.snoverlaycustomizer/ReloadPrefs</string>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>default</key>
+			<real>160</real>
+			<key>defaults</key>
+			<string>com.i0stweak3r.snoverlaycustomizer</string>
+			<key>key</key>
+			<string>flakeCount</string>
+			<key>max</key>
+			<integer>800</integer>
+			<key>min</key>
+			<integer>1</integer>
+			<key>showValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Doubles the default size of the animated snowflakes</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.i0stweak3r.snoverlaycustomizer/ReloadPrefs</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.i0stweak3r.snoverlaycustomizer</string>
+			<key>key</key>
+			<string>doubleSized</string>
+			<key>label</key>
+			<string>Bigger snowflakes</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Cuts the default size of the animated snowflakes in half</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.i0stweak3r.snoverlaycustomizer/ReloadPrefs</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.i0stweak3r.snoverlaycustomizer</string>
+			<key>key</key>
+			<string>halfSized</string>
+			<key>label</key>
+			<string>Tiny snowflakes</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Slows down the animation for a gentler feel.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.i0stweak3r.snoverlaycustomizer/ReloadPrefs</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.i0stweak3r.snoverlaycustomizer</string>
+			<key>key</key>
+			<string>slowAnimation</string>
+			<key>label</key>
+			<string>Slow down animation</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Speeds up animation so it seems to snow harder. Does not change number of flakes.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.i0stweak3r.snoverlaycustomizer/ReloadPrefs</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.i0stweak3r.snoverlaycustomizer</string>
+			<key>key</key>
+			<string>snowHarder</string>
+			<key>label</key>
+			<string>Snow harder</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSTextCell</string>
+			<key>label</key>
+			<string>Made by i0s_tweak3r.</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>twitterlink</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>icon</key>
+			<string>twitter.png</string>
+			<key>label</key>
+			<string>Follow me on Twitter</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Snoverlay tweak developed by R Petrich and updated by leftyfl1p</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSTextCell</string>
+			<key>label</key>
+			<string>Additional credits</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Snoverlay Customizer</string>
+</dict>
+</plist>
